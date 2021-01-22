@@ -903,6 +903,7 @@ GameObject:
   - component: {fileID: 2480983895680765339}
   - component: {fileID: 6366551205498810175}
   - component: {fileID: 6563529443158084605}
+  - component: {fileID: 283425293}
   m_Layer: 0
   m_Name: JohnLemon
   m_TagString: Untagged
@@ -975,6 +976,19 @@ CapsuleCollider:
   m_Height: 1.4
   m_Direction: 1
   m_Center: {x: 0, y: 0.7, z: 0}
+--- !u!114 &283425293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2480983895673486931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb2cd7c3782b0a49aaa777da5d69e7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turnSpeed: 20
 --- !u!1 &2480983895673486933
 GameObject:
   m_ObjectHideFlags: 0
