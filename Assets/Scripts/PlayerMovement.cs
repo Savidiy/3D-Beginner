@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody m_Rigidbody;
 
     [SerializeField] float turnSpeed = 20f;
+    [SerializeField] float moveSpeed = 1f;
     
     void Start()
     {
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
         m_Movement.Set(horizontal, 0f, vertical);
         m_Movement.Normalize();
+        m_Movement *= moveSpeed;
 
         bool hasHorizontalInput = !Mathf.Approximately(horizontal, 0f);
         bool hasVerticalInput = !Mathf.Approximately(vertical, 0f);
@@ -44,5 +46,8 @@ public class PlayerMovement : MonoBehaviour
         m_Rigidbody.MoveRotation(m_Rotation);
     }
 
-
+    public void SetSpeed(float speed)
+    {
+        moveSpeed = speed;
+    }
 }
